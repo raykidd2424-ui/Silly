@@ -1,0 +1,280 @@
+{
+    "assistant_impersonation": "",
+    "assistant_prefill": "",
+    "bias_preset_selected": "Default (none)",
+    "continue_nudge_prompt": "",
+    "continue_postfix": "",
+    "continue_prefill": false,
+    "enable_web_search": false,
+    "extensions": {
+        "regex_scripts": [],
+        "tavern_helper": {
+            "scripts": [
+                {
+                    "button": {
+                        "buttons": [
+                            {
+                                "name": "导入预设",
+                                "visible": true
+                            },
+                            {
+                                "name": "更新日志",
+                                "visible": true
+                            }
+                        ],
+                        "enabled": true
+                    },
+                    "content": "import 'https://testingcf.jsdelivr.net/gh/StageDog/tavern_resource/dist/预设/明月秋青写卡/脚本/index.js'",
+                    "data": {
+                        "chat_history": {
+                            "assistant_prefix": "\u003cobserved_piece class=\"剧情\"\u003e\n",
+                            "assistant_suffix": "\n\u003c/observed_piece\u003e",
+                            "squash_role": "assistant",
+                            "system_prefix": "\u003cobserved_piece class=\"设定\"\u003e\n",
+                            "system_suffix": "\n\u003c/observed_piece\u003e",
+                            "type": "squash_into_one",
+                            "user_prefix": "\u003cobserved_piece class=\"下段剧情指令\"\u003e\n",
+                            "user_suffix": "\n\u003c/observed_piece\u003e"
+                        },
+                        "delimiter": {
+                            "type": "double newline",
+                            "value": "\n\n"
+                        },
+                        "depth_injection": {
+                            "above": {
+                                "enabled": false,
+                                "placeholder": "{{压缩相邻消息::above_dx}}",
+                                "type": "exclude"
+                            },
+                            "below": {
+                                "enabled": false,
+                                "placeholder": "{{压缩相邻消息::below_dx}}",
+                                "type": "exclude"
+                            },
+                            "threshold": 10
+                        },
+                        "stop_string": "/(?:\u003c/observed_pice\u003e|\u003c\\|im_end\\|\u003e)/"
+                    },
+                    "enabled": true,
+                    "id": "3692a4df-d51a-405f-8704-1559337d653b",
+                    "info": "",
+                    "name": "明月秋青写卡预设配套脚本",
+                    "type": "script"
+                }
+            ],
+            "variables": {}
+        }
+    },
+    "frequency_penalty": 0,
+    "function_calling": true,
+    "group_nudge_prompt": "",
+    "impersonation_prompt": "",
+    "inline_image_quality": "auto",
+    "max_context_unlocked": true,
+    "media_inlining": false,
+    "min_p": 0,
+    "n": 1,
+    "names_behavior": 0,
+    "new_chat_prompt": "",
+    "new_example_chat_prompt": "",
+    "new_group_chat_prompt": "",
+    "openai_max_context": 2000000,
+    "openai_max_tokens": 8192,
+    "personality_format": "{{personality}}",
+    "presence_penalty": 0,
+    "prompt_order": [
+        {
+            "character_id": 100001,
+            "order": [
+                {
+                    "enabled": true,
+                    "identifier": "worldInfoBefore"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "personaDescription"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "charDescription"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "charPersonality"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "scenario"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "worldInfoAfter"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "dialogueExamples"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "chatHistory"
+                }
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "worldInfoBefore",
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_position": 0,
+            "marker": true,
+            "name": "这不是预设本体",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "personaDescription",
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_position": 0,
+            "marker": true,
+            "name": "只是一个空预设",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "charDescription",
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_position": 0,
+            "injection_trigger": [],
+            "marker": true,
+            "name": "去看酒馆输入框",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "charPersonality",
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_position": 0,
+            "injection_trigger": [],
+            "marker": true,
+            "name": "点击上面的「导入预设」",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "scenario",
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_position": 0,
+            "injection_trigger": [],
+            "marker": true,
+            "name": "会导入预设本体",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "worldInfoAfter",
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_position": 0,
+            "injection_trigger": [],
+            "marker": true,
+            "name": "然后你可以删除这个预设",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "dialogueExamples",
+            "marker": true,
+            "name": "Chat Examples",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "enabled": true,
+            "extra": {},
+            "forbid_overrides": false,
+            "identifier": "chatHistory",
+            "marker": true,
+            "name": "Chat History",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "enabled": true,
+            "forbid_overrides": false,
+            "identifier": "main",
+            "marker": false,
+            "name": "Main Prompt",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "enabled": true,
+            "forbid_overrides": false,
+            "identifier": "nsfw",
+            "marker": false,
+            "name": "Auxiliary Prompt",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "enabled": true,
+            "forbid_overrides": false,
+            "identifier": "jailbreak",
+            "marker": false,
+            "name": "Post-History Instructions",
+            "role": "system",
+            "system_prompt": true
+        }
+    ],
+    "reasoning_effort": "min",
+    "repetition_penalty": 1,
+    "request_image_aspect_ratio": "",
+    "request_image_resolution": "",
+    "request_images": false,
+    "scenario_format": "{{scenario}}",
+    "seed": -1,
+    "send_if_empty": "",
+    "show_thoughts": false,
+    "squash_system_messages": false,
+    "stream_openai": true,
+    "temperature": 1,
+    "top_a": 0,
+    "top_k": 0,
+    "top_p": 1,
+    "use_sysprompt": true,
+    "verbosity": "auto",
+    "wi_format": "{0}"
+}

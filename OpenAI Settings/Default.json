@@ -1,0 +1,278 @@
+{
+    "ai21_model": "jamba-large",
+    "aimlapi_model": "chatgpt-4o-latest",
+    "assistant_impersonation": "",
+    "assistant_prefill": "",
+    "audio_inlining": true,
+    "azure_api_version": "2024-02-15-preview",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_openai_model": "",
+    "bias_preset_selected": "Default (none)",
+    "bypass_status_check": false,
+    "chat_completion_source": "custom",
+    "claude_model": "claude-sonnet-4-5",
+    "claude_use_sysprompt": false,
+    "cohere_model": "command-r-plus",
+    "cometapi_model": "gpt-4o",
+    "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
+    "continue_postfix": " ",
+    "continue_prefill": false,
+    "custom_exclude_body": "",
+    "custom_include_body": "",
+    "custom_include_headers": "",
+    "custom_model": "[CLI]gemini-3.1-pro-preview",
+    "custom_prompt_post_processing": "",
+    "custom_url": "https://fanzisima.xyz/v1",
+    "deepseek_model": "deepseek-chat",
+    "electronhub_group_models": false,
+    "electronhub_model": "gpt-4o-mini",
+    "electronhub_sort_models": "alphabetically",
+    "enable_web_search": false,
+    "extensions": {},
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "frequency_penalty": 0,
+    "function_calling": false,
+    "google_model": "gemini-2.5-pro",
+    "groq_model": "llama-3.3-70b-versatile",
+    "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
+    "htfree_model": "小背心:claude-opus-4-6-kiro",
+    "image_inlining": false,
+    "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
+    "inline_image_quality": "auto",
+    "max_context_unlocked": true,
+    "min_p": 0,
+    "mistralai_model": "mistral-large-latest",
+    "moonshot_model": "kimi-latest",
+    "n": 1,
+    "names_behavior": 0,
+    "nanogpt_model": "gpt-4o-mini",
+    "new_chat_prompt": "[Start a new Chat]",
+    "new_example_chat_prompt": "[Example Chat]",
+    "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
+    "openai_max_context": 2000000,
+    "openai_max_tokens": 50000,
+    "openai_model": "gpt-4-turbo",
+    "openrouter_allow_fallbacks": true,
+    "openrouter_group_models": false,
+    "openrouter_middleout": "on",
+    "openrouter_model": "OR_Website",
+    "openrouter_providers": [],
+    "openrouter_sort_models": "alphabetically",
+    "openrouter_use_fallback": false,
+    "perplexity_model": "sonar-pro",
+    "personality_format": "{{personality}}",
+    "pollinations_model": "openai",
+    "presence_penalty": 0,
+    "prompt_order": [
+        {
+            "character_id": 100000,
+            "order": [
+                {
+                    "enabled": true,
+                    "identifier": "main"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "worldInfoBefore"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "charDescription"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "charPersonality"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "scenario"
+                },
+                {
+                    "enabled": false,
+                    "identifier": "enhanceDefinitions"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "nsfw"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "worldInfoAfter"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "dialogueExamples"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "chatHistory"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "jailbreak"
+                }
+            ]
+        },
+        {
+            "character_id": 100001,
+            "order": [
+                {
+                    "enabled": true,
+                    "identifier": "main"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "worldInfoBefore"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "personaDescription"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "charDescription"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "charPersonality"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "scenario"
+                },
+                {
+                    "enabled": false,
+                    "identifier": "enhanceDefinitions"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "nsfw"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "worldInfoAfter"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "dialogueExamples"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "chatHistory"
+                },
+                {
+                    "enabled": true,
+                    "identifier": "jailbreak"
+                }
+            ]
+        }
+    ],
+    "prompts": [
+        {
+            "content": "Write {{char}}'s next reply in a fictional chat between {{char}} and {{user}}.",
+            "identifier": "main",
+            "name": "Main Prompt",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "identifier": "nsfw",
+            "name": "Auxiliary Prompt",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "identifier": "dialogueExamples",
+            "marker": true,
+            "name": "Chat Examples",
+            "system_prompt": true
+        },
+        {
+            "content": "",
+            "identifier": "jailbreak",
+            "name": "Post-History Instructions",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "identifier": "chatHistory",
+            "marker": true,
+            "name": "Chat History",
+            "system_prompt": true
+        },
+        {
+            "identifier": "worldInfoAfter",
+            "marker": true,
+            "name": "World Info (after)",
+            "system_prompt": true
+        },
+        {
+            "identifier": "worldInfoBefore",
+            "marker": true,
+            "name": "World Info (before)",
+            "system_prompt": true
+        },
+        {
+            "content": "If you have more knowledge of {{char}}, add to the character's lore and personality to enhance them but keep the Character Sheet's definitions absolute.",
+            "identifier": "enhanceDefinitions",
+            "marker": false,
+            "name": "Enhance Definitions",
+            "role": "system",
+            "system_prompt": true
+        },
+        {
+            "identifier": "charDescription",
+            "marker": true,
+            "name": "Char Description",
+            "system_prompt": true
+        },
+        {
+            "identifier": "charPersonality",
+            "marker": true,
+            "name": "Char Personality",
+            "system_prompt": true
+        },
+        {
+            "identifier": "scenario",
+            "marker": true,
+            "name": "Scenario",
+            "system_prompt": true
+        },
+        {
+            "identifier": "personaDescription",
+            "marker": true,
+            "name": "Persona Description",
+            "system_prompt": true
+        }
+    ],
+    "proxy_password": "",
+    "reasoning_effort": "auto",
+    "repetition_penalty": 1,
+    "request_images": false,
+    "reverse_proxy": "",
+    "scenario_format": "{{scenario}}",
+    "seed": -1,
+    "send_if_empty": "",
+    "show_external_models": false,
+    "show_thoughts": true,
+    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
+    "squash_system_messages": false,
+    "stream_openai": true,
+    "temperature": 1,
+    "top_a": 0,
+    "top_k": 0,
+    "top_p": 1,
+    "use_makersuite_sysprompt": true,
+    "vertexai_auth_mode": "express",
+    "vertexai_express_project_id": "",
+    "vertexai_model": "gemini-2.5-pro",
+    "vertexai_region": "us-central1",
+    "video_inlining": true,
+    "wi_format": "{0}",
+    "wrap_in_quotes": false,
+    "xai_model": "grok-3-beta",
+    "zai_endpoint": "common",
+    "zai_model": "glm-4.6"
+}
