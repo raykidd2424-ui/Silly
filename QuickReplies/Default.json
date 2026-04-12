@@ -1,7 +1,7 @@
 {
     "color": "rgba(0, 0, 0, 0)",
     "disableSend": false,
-    "idIndex": 0,
+    "idIndex": 5,
     "injectInput": false,
     "name": "Default",
     "onlyBorderColor": false,
